@@ -1,0 +1,15 @@
+name: Add contributor
+description: Track a contributor wall entry
+title: "Add me to First Commit"
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: "Welcome! Follow the contribution guide and add your own entry to contributors.json."
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Contribution checklist
+      value: "- [ ] I added only my own contributor entry\n- [ ] I checked that my JSON is valid\n- [ ] I opened a pull request"
+    validations:
+      required: true
