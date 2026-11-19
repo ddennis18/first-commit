@@ -1,12 +1,10 @@
 # First Commit
 
-A small contributor wall website for UNIBEN students learning GitHub and open-source collaboration. Participants add their details to `contributors.json` via a fork and pull request; after a PR is reviewed and merged, the site displays their card.
-
+A small contributor wall website for UNIBEN students learning GitHub and open-source collaboration. Each participant adds **their own JSON file** inside `contributors/` via a fork and pull request. After a PR is reviewed and merged, the website discovers and displays their card automatically.
 
 ## Local preview
 
-This is a static site and requires no build step. Because the site fetches a JSON file, run it through a local web server instead of opening `index.html` directly.
-
+This is a static site and requires no build step. Since it fetches contributor files from GitHub, run it through a local web server instead of opening `index.html` directly.
 
 ### Python (if installed)
 
@@ -23,17 +21,17 @@ Open this folder in VS Code, install/enable Live Server if needed, and click **G
 ## Deploy with GitHub Pages
 
 1. Create a GitHub repository and upload/push these files to its default branch.
-2. In your repository, open **Settings → Pages**.
+2. Open **Settings → Pages**.
 3. Under **Build and deployment**, select **Deploy from a branch**.
 4. Select your default branch and `/ (root)`, then save.
 5. Wait for the Pages deployment and use the URL shown on the Pages settings screen.
-6. Replace the generic GitHub links in `index.html` with your actual repository URL before publishing.
-
 
 ## Add contributors
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Entries are stored in `contributors.json` and rendered automatically by the browser.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Add one file named `your-github-username.json` inside the `contributors/` directory. The site reads that directory through the GitHub Contents API and loads each valid contributor file; malformed files are skipped so they do not break the entire wall.
 
+**Note:** The website currently reads from `ddennis18/first-commit`. If the repository is moved or renamed, update the `REPOSITORY` value in `app.js`.
 
 ## License
+
 This project is licensed under the MIT License; see [LICENSE](LICENSE).

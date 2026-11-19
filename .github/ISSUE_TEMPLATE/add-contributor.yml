@@ -5,11 +5,11 @@ labels: ["good first issue"]
 body:
   - type: markdown
     attributes:
-      value: "Welcome! Follow the contribution guide and add your own entry to contributors.json."
+      value: "Welcome! Follow the contribution guide and add your own JSON file to the contributors/ folder."
   - type: textarea
     id: checklist
     attributes:
       label: Contribution checklist
-      value: "- [ ] I added only my own contributor entry\n- [ ] I checked that my JSON is valid\n- [ ] I opened a pull request"
+      value: "- [ ] I created my own file inside contributors/ named username.json\n- [ ] I used my correct GitHub username\n- [ ] I opened a pull request"
     validations:
       required: true

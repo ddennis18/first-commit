@@ -1,53 +1,47 @@
 # Contributing to First Commit
 
-Welcome! This project is a friendly place to practice your first open-source contribution. You do not need to be an experienced developer.
-
+Welcome! This project is a friendly place to practice your first open-source contribution. You do not need to be an experienced developer—and you can do the entire contribution on GitHub.com.
 
 ## Add your name
 
-1. Open an issue labelled **good first issue** and check that someone has not already claimed it (if the project is using issue assignments).
-2. Fork this repository to your GitHub account.
-3. In your fork, open `contributors.json`.
-4. Add one object to the JSON array. Use the format below and keep the file valid JSON.
-5. Commit your changes with a clear message, such as `Add Ada to contributors`.
-6. Open a Pull Request from your fork to this repository. In the PR description, mention the issue you are addressing (for example `Closes #1`, if there is an issue).
-7. Wait for review. A maintainer may ask you to make a change. Once approved and merged, your entry will show on the website.
+1. Open the **Add your name to the First Commit Contributors Wall** issue (or the event's contribution issue) and read its instructions.
+2. Fork this repository using the **Fork** button at the top of the repository page.
+3. In your fork, open the `contributors` folder.
+4. Click **Add file → Create new file**.
+5. Name your file `your-github-username.json` (replace this with your actual GitHub username). For example, `ada-example.json`.
+6. Paste the entry format below, replace the sample details with yours, and do not edit anyone else's file.
+7. Click **Commit changes**, add a short commit message (for example, `Add ada-example contributor file`), and commit to your fork's branch.
+8. Open **Pull requests → New pull request** (or use the **Compare & pull request** button shown after your commit). Make sure the base repository is this project and the base branch is its default branch.
+9. Create your pull request and wait for review. A maintainer may ask for a correction. After it is approved and merged, your card will appear on the website.
 
-## Entry format
+## File format
+
+Your file must contain one JSON object:
 
 ```json
 {
   "name": "Your Name",
   "github": "your-github-username",
-  "learning": "A short topic you're learning (optional)"
+  "learning": "A short topic you're learning"
 }
 ```
 
-### Example placement
+- `name`: your display name.
+- `github`: your exact GitHub username (without the `@`).
+- `learning`: a short learning interest; this field is optional.
 
-Add your entry after the last existing entry, and put a comma after the previous object. If you are the first contributor, your object goes between the array's `[` and `]`.
-
-```json
-[
-  {
-    "name": "Ada Example",
-    "github": "ada-example",
-    "learning": "Web development"
-  }
-]
-```
-
-Use your actual name and GitHub username. The `learning` field is optional; keep it short and suitable for a public profile. Do not add phone numbers, email addresses, student IDs, home addresses, or other private information.
+Example filename: `ada-example.json`.
 
 ## Contribution rules
 
-- Add only your own entry. Do not edit or remove another contributor's information.
-- Use your real GitHub username and make sure it is spelled correctly.
-- Do not add a duplicate entry.
-- Keep the JSON valid (quotes, commas, and brackets matter).
+- Add **one file for yourself** inside `contributors/`.
+- Use your GitHub username as the filename: `username.json`.
+- Do not edit, rename, or delete another contributor's file.
+- Do not add a duplicate file or duplicate GitHub username.
+- Keep the JSON valid: use double quotes around strings and no trailing comma.
+- Only include information you are comfortable making public. Do not include phone numbers, email addresses, student IDs, home addresses, or other private information.
 - Be respectful in issue discussions and pull requests.
-- Your contribution should be a small, focused change.
-
+- Keep your contribution small and focused.
 
 ## Need help?
-If you're stuck, comment on the issue or ask for help during the event. Mistakes are part of learning. Thank you for contributing!
+If you're stuck, comment on the contribution issue or ask for help during the event. Mistakes are part of learning. Thank you for contributing!
