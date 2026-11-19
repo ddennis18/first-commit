@@ -39,8 +39,9 @@ html{scroll-padding-top:96px}
 .contribute-bottom{margin-top:28px;padding-top:24px}
 footer{min-height:104px;padding:28px clamp(24px,5vw,72px);gap:24px}
 
-.ieee-logo,.gdgoc-logo{width:46px;height:46px;object-fit:contain;border-radius:8px;background:#fff}
-.gdgoc-logo{padding:3px}
+.ieee-logo{width:46px;height:46px;object-fit:contain;border-radius:8px;background:#fff}
+.gdgoc-logo{width:82px;height:46px;object-fit:contain;border-radius:8px;background:#fff;padding:4px}
+.footer-brand{gap:12px}
 
 @media(max-width:1100px){
   .topbar{padding-inline:28px}
@@ -57,7 +58,7 @@ footer{min-height:104px;padding:28px clamp(24px,5vw,72px);gap:24px}
   .brand{gap:8px}
   .brand-mark{font-size:30px}
   .ieee-logo{width:40px;height:40px}
-  .gdgoc-logo{width:40px;height:40px}
+  .gdgoc-logo{width:68px;height:40px}
   .hero{min-height:390px;padding:48px 24px}
   .hero h1{margin-bottom:18px}
   .hero-copy p{margin-bottom:24px}
@@ -79,10 +80,23 @@ footer{min-height:104px;padding:28px clamp(24px,5vw,72px);gap:24px}
   .brand{font-size:19px}
   .brand-mark{display:none}
   .ieee-logo{width:36px;height:36px}
-  .gdgoc-logo{width:36px;height:36px}
+  .gdgoc-logo{width:58px;height:36px}
   .hero{padding-inline:20px}
   .hero h1{font-size:43px}
   .contributors-section{padding-inline:16px}
   .contributor-card{padding:13px}
   .how-section{margin-inline:12px;padding-inline:16px}
+}
+
+.footer-brand .ieee-logo{width:58px;height:58px;flex-shrink:0}
+.footer-brand .gdgoc-logo{width:104px;height:58px;flex-shrink:0;padding:3px}
+
+@media(max-width:760px){
+  .footer-brand .ieee-logo{width:48px;height:48px}
+  .footer-brand .gdgoc-logo{width:82px;height:48px}
+}
+
+@media(max-width:420px){
+  .footer-brand .ieee-logo{width:44px;height:44px}
+  .footer-brand .gdgoc-logo{width:74px;height:44px}
 }
